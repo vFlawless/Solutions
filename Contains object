@@ -1,0 +1,28 @@
+public bool Contains_int()
+        {
+            int[] vs = new int[] { 1, 1283, 12, 19, 98, 128 };
+            int contain = 12;
+            for (int i = 0; i < vs.Length; i++)
+            {
+                if (vs[i] == contain)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool Contains_string()
+        {
+            string[] vs = new string[] { "Hallo", "Tag", "Eins", "Zwei" };
+            string contain = "Eins";
+
+            for (int i = 0; i < vs.Length; i++)
+            {
+                if(vs[i] == contain)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
