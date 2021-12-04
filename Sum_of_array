@@ -1,7 +1,5 @@
-public int Sum()
+public int Sum(int[] vs)
         {
-            
-            int[] vs = new int[] {1, 1283, 12, 19, 98, 128};  //Hier kann ein beliebiges Array stehen
             int sum = 0;
             for (int i = 0; i < vs.Length; i++)
             {
