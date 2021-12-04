@@ -1,0 +1,20 @@
+public int LengthOfLongestSubstring(string s) {
+        
+        int max = 0; 
+        int i = 0; 
+        int j = 0;
+        Dictionary<char,int> map = new Dictionary<char,int>();
+        
+        while(j<s.Length){
+            if(!map.ContainsKey(s[j])){
+                map.Add(s[j],1);
+                max = Math.Max(map.Count,max);
+                j++;
+            }
+            else{
+                map.Remove(s[i]);
+                i++;
+            }                
+        }
+        return max;
+    }
