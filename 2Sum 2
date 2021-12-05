@@ -1,0 +1,14 @@
+public int[] TwoSum(int[] numbers, int target) {
+        List<int> vs = new  List<int>();
+        for(int i = 0; i < numbers.Length; i++){
+            for(int j = 0; j < numbers.Length; j++){
+                if(numbers[i] + numbers[j] == target && i != j && vs.Count == 0){
+                    vs.Add(++i);
+                    vs.Add(++j);
+                }
+            }
+        }
+        return vs.ToArray();
+}
+
+//Es ist definitiv nicht perfekt aber leicht verständlich
