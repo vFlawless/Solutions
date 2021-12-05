@@ -1,15 +1,4 @@
-public int RemoveDuplicates(int[] nums) 
+public int[] RemoveDuplicates(int[] nums) 
     {      
-        var k = 0;
-        var j = 1;
-        
-        while(j < nums.Count())
-        {
-            if (nums[k] == nums[j])
-                j++;
-            else
-                nums[++k] = nums[j++];
-        }
-        
-        return Math.Min(k + 1, nums.Count());
+        return nums.Distinct().ToArray();
     }
