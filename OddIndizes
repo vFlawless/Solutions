@@ -1,0 +1,8 @@
+public int[] OddIndizes(int[] nums)
+        {
+            List<int> result = new List<int>();
+            for (int i = 0; i < nums.Length; i++)
+                if (i % 2 != 0)
+                    result.Add(nums[i]);
+            return result.ToArray();
+}
