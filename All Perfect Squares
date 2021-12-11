@@ -1,0 +1,15 @@
+public int[] perfsquares(int[] nums)
+        {
+            List<int> result = new List<int>(); 
+            for (int i = 0; i < nums.Length; i++)
+            {
+                for (int j = 0; j < nums[i]; j++)
+                {
+                    if(j * j == nums[i])
+                    {
+                        result.Add(nums[i]);
+                    }
+                }
+            }
+            return result.ToArray();
+        }
